@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Question-1</h1>
+    <script>
+        const input = prompt("enter a string:");
+        let str = input.toLowerCase();
+        let vowels=0;
+        let consonants=0;
+        for(i=0;i<str.length;i++){
+            if(!(str[i]==" " || str[i]=="$")){
+                if (str[i]=="a" || str[i]=="e" || str[i]=="i" || str[i]=="o" || str[i]=="u"){
+                    vowels++;
+                }
+                else{
+                    consonants++;
+                }  
+            }
+        }
+        console.log(vowels);
+        console.log(consonants);
+    </script>
+</body>
+</html>
